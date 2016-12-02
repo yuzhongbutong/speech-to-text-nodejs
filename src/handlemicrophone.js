@@ -56,7 +56,7 @@ exports.handleMicrophone = function(token, model, mic, callback) {
     'word_alternatives_threshold': 0.001,
     'smart_formatting': true
   };
-  if (keywords.length > 0) {
+  if (keywords.length > 0.0) {
     options.message.keywords_threshold = keywords_threshold;
     options.message.keywords = keywords;
   }
